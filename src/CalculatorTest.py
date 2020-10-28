@@ -8,6 +8,14 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertIsInstance(calculator, Calculator)
 
+    def test_result_property_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.result, 1)
+
+    def test_add_method_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.add(2, 2), calculator.result)
+
 
 if __name__ == '__main__':
     unittest.main()
