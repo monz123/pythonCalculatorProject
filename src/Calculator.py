@@ -1,3 +1,5 @@
+import math
+
 
 def addition(a, b):
     return a + b
@@ -17,6 +19,10 @@ def division(a, b):
 
 def square(a):
     return a * a
+
+
+def sqrt(a):
+    return float(math.sqrt(a))
 
 
 class Calculator:
@@ -46,6 +52,9 @@ class Calculator:
         self.result = round(division(int(a), int(b)), 9)
         return self.result
 
+    def squareRoot(self, a):
+        self.result = sqrt(int(a))
+        return self.result
 
 
 
