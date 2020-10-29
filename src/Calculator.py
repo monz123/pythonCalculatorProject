@@ -10,6 +10,10 @@ def multiplication(a, b):
     return a * b
 
 
+def division(a, b):
+    return float(b/a)
+
+
 def square(a):
     return a * a
 
@@ -36,5 +40,11 @@ class Calculator:
     def squares(self, a):
         self.result = square(int(a))
         return self.result
+
+    def divide(self, a, b):
+        self.result = division(int(a), int(b))
+        return self.result
+
+
 
 
