@@ -1,3 +1,4 @@
+
 def addition(a, b):
     return a + b
 
@@ -8,6 +9,10 @@ def subtraction(a, b):
 
 def multiplication(a, b):
     return a * b
+
+
+def division(a, b):
+    return float(b/a)
 
 
 def square(a):
@@ -36,5 +41,11 @@ class Calculator:
     def squares(self, a):
         self.result = square(int(a))
         return self.result
+
+    def divide(self, a, b):
+        self.result = round(division(int(a), int(b)), 9)
+        return self.result
+
+
 
 
