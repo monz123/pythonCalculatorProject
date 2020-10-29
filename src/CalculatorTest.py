@@ -39,8 +39,15 @@ class MyTestCase(unittest.TestCase):
     def test_divide_method_calculator(self):
         test_data = CsvReader("src/CsvForTesting/Unit Test Division.csv").data
         for row in test_data:
-            result = float(row['Result'])
+            result = round(float(row['Result']),7)
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), result)
+            self.assertEqual(self.calculator.result, result)
+
+    def test_sqrt_method_calculator(self):
+        test_data = CsvReader("src/CsvForTesting/Unit Test Square Root.csv").data
+        for row in test_data:
+            result = round(float(row['Result']), 7)
+            self.assertEqual(self.calculator.square_root(row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
 
 
