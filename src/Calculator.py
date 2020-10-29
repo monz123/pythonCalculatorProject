@@ -1,3 +1,4 @@
+
 def addition(a, b):
     return a + b
 
@@ -42,7 +43,7 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = division(int(a), int(b))
+        self.result = round(division(int(a), int(b)), 9)
         return self.result
 
 
