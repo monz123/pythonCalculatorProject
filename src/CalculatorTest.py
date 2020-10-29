@@ -14,7 +14,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 1)
 
     def test_add_method_calculator(self):
-
         self.assertEqual(self.calculator.add(2, 2), 4)
         self.assertEqual(self.calculator.result, 4)
 
