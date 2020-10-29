@@ -1,5 +1,5 @@
 def addition(a, b):
-    return a+b
+    return a + b
 
 
 class Calculator:
@@ -10,6 +10,8 @@ class Calculator:
         pass
 
     def add(self, a, b):
-        self.result = a + b
-        return addition(a, b)
+        a = int(a)
+        b = int(b)
+        self.result = addition(a, b)
+        return self.result
 
