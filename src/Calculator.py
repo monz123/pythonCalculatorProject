@@ -10,6 +10,10 @@ def multiplication(a, b):
     return a * b
 
 
+def square(a):
+    return a * a
+
+
 class Calculator:
     result = 0
 
@@ -27,6 +31,10 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(int(a), int(b))
+        return self.result
+
+    def squares(self, a):
+        self.result = square(int(a))
         return self.result
 
 
